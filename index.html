@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Hi-Lo Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <div id="welcome-Screen">
+            <h2>Guess The Random Number Between 1-100</h2>
+            <img src="./assets/undraw_gaming_re_cma2.svg" >
+
+            <section class="event-Section">
+                <h4>Select The Difficulty</h4>
+                <div class="button-Wrapper">
+                    <button>Easy: 10 attempts</button>
+                    <button>Easy: 5 attempts</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Actual Game Screen -->
+
+        <div id="game-Area">
+            <div id="new-Game-Button">
+                <button>New Game</button>
+            </div>
+            <section>
+                <h3>Your Guesses</h3>
+                <input type="text" id="input-box" min="1" max="100"
+                placeholder="Enter your Number"> 
+            </section>
+
+
+            <section class="stats">
+                <div class="info">
+                    <p>Number of Previous attempts</p>
+                    <span id="attempts"> 0 </span>
+                </div>
+                <div class="info">
+                    <p>Number of Previous guesses</p>
+                    <span id="guesses"> 0 </span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
